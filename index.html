@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elite Styles | Luxury Salon & Spa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">ELITE STYLES</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html#book" class="btn-book">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1544161515-4af6b1d8e159?auto=format&fit=crop&w=1600&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Premium Unisex Barbering & Spa Experience</h1>
+            <p>Look Sharp. Feel Relaxed.</p>
+            <div class="cta-btns">
+                <a href="#book" class="btn btn-gold">Book Now</a>
+                <a href="services.html" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services-preview">
+        <h2 class="section-title">Transform Your Look & Unwind</h2>
+        <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div style="text-align: center; background: var(--off-white); padding: 40px;">
+                <i class="fas fa-cut fa-3x" style="color: var(--primary-blue); margin-bottom: 15px;"></i>
+                <h3>Haircuts & Styling</h3>
+                <p>Expert precision for all hair types.</p>
+            </div>
+            </div>
+        <div style="text-align:center; margin-top: 40px;">
+            <a href="services.html" class="btn-book" style="text-decoration:none;">View All Services</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Elite Styles</h4>
+                <p>Luxury grooming and relaxation in a tranquil environment.</p>
+                <div class="social-icons" style="margin-top: 20px;">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Your Email" style="padding: 10px; width: 100%; border: none;">
+                    <button class="btn-gold" style="padding: 10px; width: 100%; border: none; margin-top: 10px; cursor: pointer;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p style="text-align:center;">&copy; 2026 Elite Styles Salon & Spa. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
