@@ -1,0 +1,191 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #002366;    /* Deep Royal Blue */
+    --accent-blue: #003399;     /* Brighter Royal for Hovers */
+    --off-white: #f8f9fa;       /* Clean background */
+    --dark-text: #1a1a1a;
+    --gray-light: #e0e0e0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Modern Sans-serif */
+    background-color: var(--white);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Premium Serif for Headings */
+}
+
+/* Header Styles */
+header {
+    background-color: #fff; /* Clean white header for luxury contrast */
+    color: var(--dark-text);
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-blue);
+}
+
+/* Restored Brand Color to CTA */
+header .book-now {
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header .book-now:hover {
+    background-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 85vh;
+    background: linear-gradient(rgba(0, 35, 102, 0.4), rgba(0, 35, 102, 0.6)), 
+                url('assets/hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Restore Blue to Hero Buttons */
+.hero .btn {
+    background-color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    color: #fff;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero .btn-outline {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.hero .btn:hover {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
+/* Services Section */
+.services {
+    padding: 80px 10%;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.services .sub-title {
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.service-card {
+    background-color: var(--off-white);
+    transition: 0.4s;
+    border-bottom: 4px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-blue); /* Royal blue highlight on hover */
+}
+
+/* Restore Blue to Universal Buttons */
+.btn {
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--accent-blue);
+}
+
+/* Testimonials - Star Color */
+.testimonial span {
+    font-size: 18px;
+    color: var(--primary-blue); /* Using brand color for rating stars */
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--primary-blue); /* Deep Royal Blue Footer */
+    color: #fff;
+    padding: 60px 10%;
+}
+
+footer .footer-links a {
+    color: rgba(255,255,255,0.8);
+    transition: 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: #fff;
+}
+
+/* Newsletter Restore */
+.newsletter-btn {
+    background-color: #fff;
+    color: var(--primary-blue);
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
